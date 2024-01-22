@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import csv
 
-df = pd.read_csv('all_smiles_mols.csv') #generated using openbabel report
+df = pd.read_csv('geckoq_smiles_mols.txt') #generated using openbabel report
 df.columns = ['column']
 df = df[ df[ 'column' ].str.contains('MASS: ')==True ] #We just need the molecule formula
 df = df.iloc[::2, :]
@@ -18,11 +18,12 @@ print(df)
 print(min(df['column']))
 print(max(df['column']))
 print(np.mean(df['column']))
-smiles = pd.read_csv('all_smiles.csv', header=None)
+smiles = pd.read_csv('geckoq_smiles.csv', header=None)
 smiles.columns = ['SMILES']
+#print(smiles)
 output = pd.DataFrame()
 output.insert(0, 'SMILES', smiles['SMILES'])
 output.insert(1, 'molar_mass', df['column'])
-output['log_p_sat'] = pd.read_csv('log_p_sat.txt', header=None)
+output['log_p_sat'] = pd.read_csv('geckoq_log_p_sat.txt', header=None)
 print(output)
-output.to_csv('all_smiles_molar_mass.csv', index = False)
+output.to_csv('geckoq_molar_mass.csv', index = False)

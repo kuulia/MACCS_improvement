@@ -59,8 +59,10 @@ def weighted_mean(df: pd.DataFrame) -> list:
 #    counts = get_counts(df, comp)
 #    return sum / counts
 
-
-
+#pats = pd.read_csv('../maccs_improvement/scripts/aprl_ssp/SMARTSpatterns/SIMPOLgroups_noring_nonnitrophenol.csv')
+#print(len(data))
+#print(len(pats))
+#data['SMARTSpattern'] = pats['pattern'].astype(str)
 data['Counts'] = counts_of_groups(df)
 data['Weighted_mean'] = weighted_mean(df)
 data.index.name = 'Compound'
