@@ -3,9 +3,7 @@ This project contains a modified version of the SIMPOL project (https://github.c
 SIMPOL is used to estimate vapor pressures and relies on identifying a number of molecular functional groups/features
 https://acp.copernicus.org/articles/8/2773/2008/
 
-The original project was written in python2. I (Hilda Sandström) have changed a few instances to be python3 compatible to be able to run, but there might still be parts with py2 syntax.
-
-I added an init file and packaged parts of substructure_search.py as functions.
+The original project was written in python2. Hilda Sandström has changed a few instances to be python3 compatible to be able to run, but there might still be parts with py2 syntax. Added an init file and packaged parts of substructure_search.py as functions.
 
 data
     examples: example scripts from aprl-ssp
