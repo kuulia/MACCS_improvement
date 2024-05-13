@@ -7,3 +7,4 @@ pandas==1.5.3
 pybel==0.15.5
 rdkit==2023.3.3
 seaborn==0.13.0
+# developed and tested in Python 3.10.0
