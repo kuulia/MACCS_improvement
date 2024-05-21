@@ -21,6 +21,7 @@ example: run scripts/aprl_ssp/substructure_search.py -d -g SIMPOLgroups_sane.csv
 
 Linus Lind
 Parts of software used in the making of Bachelor's thesis: 
--Feature engineering for machine learning predictions in atmospheric science-
+-Molecular descriptor engineering for machine learning predictions in atmospheric science-
 Changes Dec 2023:
-Addition of SIMPOL group analysis and generation, and MACCS stats.
+Addition of SIMPOL group analysis and generation and MACCS stats.
+Enumerate SMARTS patterns to CSV.
